@@ -56,6 +56,8 @@ rmse
 #plotting regression line
 
 plt.scatter(x_test, y_test, color="blue", label="Actual values")
+#scatter plot-each value represnt actual house value in test data
+
 plt.plot(x_test,y_pred,color="red",label="Regression Line")
 plt.title("Linear Regression")
 plt.xlabel("Madian Income")
@@ -66,6 +68,9 @@ plt.show()
 # Display RMSE
 print(f"Root Mean Squared Error (RMSE): {rmse}")
 
+# best-fit line, meaning the model tries to minimize the overall error between the actual data points and the predicted values.
+# if blue dots tightly clustered around the red line,that mean the model's predictions are very accurate but our point some are spread out that means there some error
+#RMSE (around 84,209), indicating the average error between the predicted and actual house values.
 
 
 #Above graph show Positive correlation:As median income increases, house prices also rise
