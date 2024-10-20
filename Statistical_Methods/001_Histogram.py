@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Sep 29 14:14:52 2024
-
 @author: Vaishnavi
 """
 #       Histogram
@@ -10,13 +8,13 @@ Created on Sun Sep 29 14:14:52 2024
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Sample data (replace this with your own data)
+# Sample data 
 data = np.random.randn(1000)  # 1000 random numbers from a normal distribution
 
 # Create the histogram
 plt.hist(data, bins=30, edgecolor='black')
 
-# Add titles and labels
+#  titles and labels
 plt.title('Histogram of Random Data')
 plt.xlabel('Value')
 plt.ylabel('Frequency')
@@ -25,7 +23,7 @@ plt.ylabel('Frequency')
 plt.show()
 
 """
-bins: Defines the number of bins or intervals for the histogram (e.g., 30 in this case).
+bins: Defines the number of bins or intervals for the histogram (30 in this case).
 edgecolor='black': Adds a border to each bar for better visibility.
 plt.show(): Displays the histogram.
 
